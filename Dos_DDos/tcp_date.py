@@ -44,10 +44,9 @@ class Request:
         return f"{self.proxy_ua_referer_path}/{self.referer_file}"
 
     def main(self):
-        request = Request()
-        request.proxy_list_build()
-        request.ua_list_build()
-        request.referer_list_build()
+        self.proxy_list_build()
+        self.ua_list_build()
+        self.referer_list_build()
 
 if __name__ == "__main__":
     

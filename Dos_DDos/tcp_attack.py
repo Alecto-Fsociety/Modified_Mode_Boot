@@ -67,7 +67,7 @@ class TCP:
                     s.sendall(send_date)
 
         except ConnectionError or TimeoutError:
-                s,close()
+                s.close()
                 self.los_attack += 1
                 port = random.choice(port_date["port_date"])
 

@@ -2,6 +2,7 @@ try:
    import requests,pathlib,subprocess,platform,sys
    from bs4 import BeautifulSoup
 except:
+  import platform,subprocess
   if platform.system() == "Windows":
       subprocess.call(["python.exe","-m","pip","install","--upgrade","pip"],stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
   else:

@@ -93,7 +93,7 @@ class TCP:
         
         try:
                 request = f"""
-                GET / HTTP1.1\r\n/
+                GET / HTTP/1.1\r\n/
                 Host : {proxy}\r\n/
                 Connection : Keep-Alive\r\n/
                 User-Agent : {ua}\r\n/
@@ -136,7 +136,7 @@ class TCP:
         try:
                 
                 request = f"""
-                POST / HTTP1.1\r\n/
+                POST / HTTP/1.1\r\n/
                 Host : {proxy}\r\n/
                 Connection : Keep-Alive\r\n/
                 Content-Length : {len(send_file)}\r\n/
